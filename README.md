@@ -18,19 +18,16 @@ An MCP server implementation that integrates the Sonar API to provide Claude wit
 
 ### Step 1
 
-Clone the MCP repository:
+Clone this repository:
 
 ```bash
-git clone https://github.com/ppl-ai/modelcontextprotocol.git
+git clone git@github.com:ppl-ai/modelcontextprotocol.git
 ```
 
 Navigate to the `perplexity-ask` directory and install the necessary dependencies:
 
 ```bash
-cd modelcontextprotocol/perplexity-ask 
-npm install
-npm run build
-npm link
+cd modelcontextprotocol/perplexity-ask && npm install
 ```
 
 #### Direct Path Method
@@ -114,13 +111,12 @@ vim ~/Library/Application\ Support/Claude/claude_desktop_config.json
 Docker build:
 
 ```bash
-cd perplexity-ask
-docker build -t mcp/perplexity-ask:latest .
+docker build -t mcp/perplexity-ask:latest -f perplexity-ask/Dockerfile .
 ```
 
 ### Step 5: Testing
 
-Let’s make sure Claude for Desktop is picking up the two tools we’ve exposed in our `perplexity-ask` server. You can do this by looking for the hammer icon:
+Let's make sure Claude for Desktop is picking up the two tools we've exposed in our `perplexity-ask` server. You can do this by looking for the hammer icon:
 
 ![Claude Visual Tools](perplexity-ask/assets/visual-indicator-mcp-tools.png)
 
