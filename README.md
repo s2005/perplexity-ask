@@ -30,6 +30,24 @@ Navigate to the `perplexity-ask` directory and install the necessary dependencie
 cd modelcontextprotocol/perplexity-ask && npm install
 ```
 
+#### Direct Path Method
+
+If the package is not yet published to the npm registry, you can use configuration for Claude which is pointing directly to the built JavaScript file:
+
+```json
+{
+  "mcpServers": {
+    "perplexity-ask": {
+      "command": "node",
+      "args": ["path/to/modelcontextprotocol/perplexity-ask/dist/index.js"],
+      "env": {
+        "PERPLEXITY_API_KEY": "your-perplexity-api-key"
+      }
+    }
+  }
+}
+```
+
 ### Step 2: Get a Sonar API Key
 
 1. Sign up for a [Sonar API account](https://docs.perplexity.ai/guides/getting-started).
@@ -63,7 +81,7 @@ cd modelcontextprotocol/perplexity-ask && npm install
 }
 ```
 
-### NPX
+### npx Method (when the package is published)
 
 ```json
 {
@@ -72,7 +90,7 @@ cd modelcontextprotocol/perplexity-ask && npm install
       "command": "npx",
       "args": [
         "-y",
-        "@modelcontextprotocol/server-perplexity-ask"
+        "@mcp-perplexity-ask"
       ],
       "env": {
         "PERPLEXITY_API_KEY": "YOUR_API_KEY_HERE"
