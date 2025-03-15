@@ -4,7 +4,6 @@ An MCP server implementation that integrates the Sonar API to provide Claude wit
 
 ![Demo](perplexity-ask/assets/demo_screenshot.png)
 
-
 ## Tools
 
 - **perplexity_ask**
@@ -17,7 +16,7 @@ An MCP server implementation that integrates the Sonar API to provide Claude wit
 
 ## Configuration
 
-### Step 1: 
+### Step 1
 
 Clone this repository:
 
@@ -39,7 +38,7 @@ cd modelcontextprotocol/perplexity-ask && npm install
 
 ### Step 3: Configure Claude Desktop
 
-1. Download Claude desktop [here](https://claude.ai/download). 
+1. Download Claude desktop [here](https://claude.ai/download).
 
 2. Add this to your `claude_desktop_config.json`:
 
@@ -113,12 +112,10 @@ If you see both of these this means that the integration is active. Congratulati
 
 Currently, the search parameters used are the default ones. You can modify any search parameter in the API call directly in the `index.ts` script. For this, please refer to the official [API documentation](https://docs.perplexity.ai/api-reference/chat-completions).
 
-### Troubleshooting 
+### Troubleshooting
 
-The Claude documentation provides an excellent [troubleshooting guide](https://modelcontextprotocol.io/docs/tools/debugging) you can refer to. However, you can still reach out to us at api@perplexity.ai for any additional support or [file a bug](https://github.com/ppl-ai/api-discussion/issues). 
-
+The Claude documentation provides an excellent [troubleshooting guide](https://modelcontextprotocol.io/docs/tools/debugging) you can refer to. However, you can still reach out to us at [api@perplexity.ai](mailto:api@perplexity.ai) for any additional support or [file a bug](https://github.com/ppl-ai/api-discussion/issues).
 
 ## License
 
 This MCP server is licensed under the MIT License. This means you are free to use, modify, and distribute the software, subject to the terms and conditions of the MIT License. For more details, please see the LICENSE file in the project repository.
-
