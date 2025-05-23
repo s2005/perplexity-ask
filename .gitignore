@@ -40,7 +40,6 @@ npm-debug.log*
 
 # Ignore dependency and build artifacts
 node_modules/
-npm-debug.log
 yarn-error.log
 
 # Ignore coverage and test reports
